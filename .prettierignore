@@ -1,5 +1,5 @@
 .next
-next-env-d.ts
+*.d.ts
 node_modules
 public
 yarn.lock

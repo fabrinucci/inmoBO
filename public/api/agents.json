@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "agent_id": 1,
+      "firstName": "Eduardo",
+      "lastName": "Grimmette",
+      "email": "edu.grimmette@realestate.com",
+      "phone": "+1 801-555-1212",
+      "photo": "https://xsgames.co/randomusers/assets/avatars/male/53.jpg",
+      "specializations": ["Land", "Residential"],
+      "slug": "eduardo-grimmette"
+    },
+    {
+      "agent_id": 2,
+      "firstName": "Isabel",
+      "lastName": "Emily",
+      "email": "isa_emi@realestate.com",
+      "phone": "+1 801-555-3333",
+      "photo": "https://xsgames.co/randomusers/assets/avatars/female/55.jpg",
+      "specializations": ["Apartments", "Commercial"],
+      "slug": "isabel-emily"
+    },
+    {
+      "agent_id": 3,
+      "firstName": "Darwin",
+      "lastName": "Mints",
+      "email": "darwinmmmtts__59@realestate.com",
+      "phone": "+1 801-555-5555",
+      "photo": "https://xsgames.co/randomusers/assets/avatars/male/67.jpg",
+      "specializations": ["Commercial", "Land", "Residential"],
+      "slug": "darwin-mints"
+    },
+    {
+      "agent_id": 4,
+      "firstName": "Gianluca",
+      "lastName": "Pellegri",
+      "email": "gian-pellegri--96@realestate.com",
+      "phone": "+1 801-555-5555",
+      "photo": "https://xsgames.co/randomusers/assets/avatars/male/47.jpg",
+      "specializations": ["Apartments", "Commercial", "Residential"],
+      "slug": "gianluca-pellegri"
+    },
+    {
+      "agent_id": 5,
+      "firstName": "Sheyla",
+      "lastName": "Granada",
+      "email": "sheylaa_gra_95@realestate.com",
+      "phone": "+1 801-555-5555",
+      "photo": "https://xsgames.co/randomusers/assets/avatars/female/17.jpg",
+      "specializations": ["Residential"],
+      "slug": "sheyla-granada"
+    },
+    {
+      "agent_id": 6,
+      "firstName": "Felipao",
+      "lastName": "Gerson",
+      "email": "felipao-gerson@realestate.com",
+      "phone": "+1 801-555-5555",
+      "photo": "https://xsgames.co/randomusers/assets/avatars/male/40.jpg",
+      "specializations": ["Commercial", "Land"],
+      "slug": "felipao-gerson"
+    }
+  ]
+}

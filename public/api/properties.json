@@ -1,0 +1,188 @@
+{
+  "data": [
+    {
+      "property_id": 1,
+      "name": "123 Main Street",
+      "slug": "123-main-street",
+      "operation_type": "Sale",
+      "property_type": "House",
+      "address": "123 Main Street, Salt Lake City, UT 84101",
+      "price": 2500000,
+      "total_sq_m": 347.5,
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "garage": true,
+      "pool": true,
+      "description": "Luxury 5-bedroom house with a large garden, grill, and pool. Located in Park City, in a quiet and family-friendly neighborhood. It has all the services and amenities for a comfortable life.",
+      "photos": [
+        "/assets/properties/pty_1/1.webp",
+        "/assets/properties/pty_1/2.webp",
+        "/assets/properties/pty_1/3.webp",
+        "/assets/properties/pty_1/4.webp"
+      ],
+      "status": "Available",
+      "publication_date": "2023-05-24",
+      "agent_id": 1
+    },
+    {
+      "property_id": 2,
+      "name": "456 Elm Street",
+      "slug": "456-elm-street",
+      "operation_type": "Sale",
+      "property_type": "House",
+      "address": "456 Elm Street, Provo, UT 54409",
+      "price": 950000,
+      "total_sq_m": 243,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "garage": true,
+      "pool": false,
+      "description": "Beautiful 3-bedroom house with full kitchen, bathroom with bathtub, and separate laundry room. Located in Provo, near the best restaurants and shops. Ideal for couples or small families.",
+      "photos": [
+        "/assets/properties/pty_2/1.webp",
+        "/assets/properties/pty_2/2.webp",
+        "/assets/properties/pty_2/3.webp",
+        "/assets/properties/pty_2/4.webp"
+      ],
+      "status": "Available",
+      "publication_date": "2024-02-10",
+      "agent_id": 2
+    },
+    {
+      "property_id": 3,
+      "name": "1011 Pine Street",
+      "slug": "1011-pine-street",
+      "operation_type": "Rent",
+      "property_type": "House",
+      "address": "1011 Pine Street, Salt Lake City, UT 81567",
+      "price": 12000,
+      "total_sq_m": 210,
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "garage": false,
+      "pool": true,
+      "description": "Nestled in one of Salt Lake City's most prestigious neighborhoods, this luxurious contemporary home is a masterpiece of modern design and comfort. The house is situated on a sprawling, manicured lot with breathtaking views of the Wasatch Mountains.",
+      "photos": [
+        "/assets/properties/pty_4/1.webp",
+        "/assets/properties/pty_4/2.webp",
+        "/assets/properties/pty_4/3.webp"
+      ],
+      "status": "Available",
+      "publication_date": "2022-03-09"
+    },
+    {
+      "property_id": 4,
+      "name": "789 Oak Street",
+      "slug": "789-oak-street",
+      "operation_type": "Sale",
+      "property_type": "House",
+      "address": "789 Oak Street, Ogden, UT 18024",
+      "price": 1100000,
+      "total_sq_m": 186,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "garage": true,
+      "pool": false,
+      "description": "Nestled in Park City, this home offer a perfect blend of rustic charm and modern luxury.",
+      "photos": [
+        "/assets/properties/pty_3/1.webp",
+        "/assets/properties/pty_3/2.webp",
+        "/assets/properties/pty_3/3.webp"
+      ],
+      "status": "Available",
+      "publication_date": "2024-04-15",
+      "agent_id": 1
+    },
+    {
+      "property_id": 5,
+      "name": "222 Maple Street",
+      "slug": "222-maple-street",
+      "operation_type": "Rent",
+      "property_type": "Apartment",
+      "address": "222 Maple Street, St. George, UT 84790",
+      "price": 3500,
+      "total_sq_m": 92.9,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "garage": false,
+      "pool": false,
+      "description": "Cozy studio apartment with a balcony overlooking the pool. Located in St. George, a short walk from shops and restaurants. Perfect for a weekend getaway or a retiree seeking a warm climate.",
+      "photos": [
+        "/assets/properties/pty_5/1.webp",
+        "/assets/properties/pty_5/2.webp"
+      ],
+      "status": "Available",
+      "publication_date": "2024-05-20",
+      "agent_id": 3
+    },
+    {
+      "property_id": 6,
+      "name": "857 Elm Street",
+      "slug": "857-elm-street",
+      "operation_type": "Rent",
+      "property_type": "House",
+      "address": "857 Elm Street, Draper, UT 84020",
+      "price": 2800,
+      "total_sq_m": 185.8,
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "garage": true,
+      "pool": false,
+      "description": "Charming 2-bedroom townhouse in a quiet neighborhood. Close to parks, schools, and shopping centers. Ideal for a small family or couple.",
+      "photos": [
+        "/assets/properties/pty_6/1.webp",
+        "/assets/properties/pty_6/2.webp",
+        "/assets/properties/pty_6/3.webp"
+      ],
+      "status": "Available",
+      "publication_date": "2024-05-17",
+      "agent_id": 2
+    },
+    {
+      "property_id": 7,
+      "name": "333 Main Street",
+      "slug": "333-main-street",
+      "operation_type": "Sale",
+      "property_type": "House",
+      "address": "333 Main Street, Midway, UT 84049",
+      "price": 1850000,
+      "total_sq_m": 422.4,
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "garage": true,
+      "pool": false,
+      "description": "Scenic mountain view lot with utilities available. Perfect for building your dream cabin or a vacation getaway.",
+      "photos": [
+        "/assets/properties/pty_7/1.webp",
+        "/assets/properties/pty_7/2.webp",
+        "/assets/properties/pty_7/3.webp"
+      ],
+      "status": "Available",
+      "publication_date": "2024-04-22",
+      "agent_id": 1
+    },
+    {
+      "property_id": 8,
+      "name": "142 Peach Street",
+      "slug": "142-peach-street",
+      "operation_type": "Rent",
+      "property_type": "Apartment",
+      "address": "142 Peach Street, Layton, UT 84041",
+      "price": 3800,
+      "total_sq_m": 139.4,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "garage": true,
+      "pool": false,
+      "description": "Spacious 3-bedroom apartment in a family-friendly neighborhood. Features a balcony, washer and dryer in unit, and walking distance to parks and schools.",
+      "photos": [
+        "/assets/properties/pty_8/1.webp",
+        "/assets/properties/pty_8/2.webp",
+        "/assets/properties/pty_8/3.webp"
+      ],
+      "status": "Available",
+      "publication_date": "2024-05-15",
+      "agent_id": 3
+    }
+  ]
+}

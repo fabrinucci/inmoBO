@@ -15,6 +15,7 @@
     "import-helpers/order-imports": [
       "warn",
       { "newlinesBetween": "always" }
-    ]
+    ],
+    "@next/next/no-img-element": false
   }
 }
