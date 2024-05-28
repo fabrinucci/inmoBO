@@ -1,4 +1,5 @@
 import { getAgents } from '@/services';
+
 import { Agent } from './';
 
 export async function Agents() {

@@ -12,10 +12,7 @@
     "sourceType": "module"
   },
   "rules": {
-    "import-helpers/order-imports": [
-      "warn",
-      { "newlinesBetween": "always" }
-    ],
-    "@next/next/no-img-element": false
+    "import-helpers/order-imports": [ "warn", { "newlinesBetween": "always" } ],
+    "@next/next/no-img-element": "off"
   }
 }
