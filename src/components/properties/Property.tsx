@@ -26,7 +26,7 @@ export const Property = ({ property }: { property: PropertyData }) => {
     slug,
   } = property;
   return (
-    <article key={name} className='w-auto rounded-lg border border-gray-700 bg-gray-800 shadow'>
+    <article className='w-auto rounded-lg border border-gray-700 bg-gray-800 shadow'>
       <img className='h-60 w-full rounded-t-lg object-cover' src={photos[0]} alt={name} />
       <div className='p-5'>
         <Link href={`/property/${slug}`}>
