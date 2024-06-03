@@ -3,9 +3,7 @@ import { Properties } from '@/components/properties';
 
 export default async function Home() {
   return (
-    <main className='p-6'>
-      <h1 className='text-4xl font-bold'>InmoBO</h1>
-
+    <main className='px-6'>
       <Properties />
       <Agents />
     </main>
