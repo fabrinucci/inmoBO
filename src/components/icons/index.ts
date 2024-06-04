@@ -7,5 +7,7 @@ export * from './GarageIcon';
 export * from './LeftArrow';
 export * from './LocationIcon';
 export * from './MaximizeIcon';
+export * from './MoonIcon';
 export * from './PoolIcon';
+export * from './SunIcon';
 export * from './XIcon';

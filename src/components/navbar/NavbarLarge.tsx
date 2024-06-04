@@ -8,7 +8,7 @@ export const NavbarLarge = () => {
 
   return (
     <div className='hidden w-full md:block md:w-auto'>
-      <ul className='mt-4 flex flex-col rounded-lg  bg-gray-800 font-medium md:mt-0 md:flex-row md:space-x-8 md:bg-transparent rtl:space-x-reverse'>
+      <ul className='mt-4 flex flex-col gap-6 rounded-lg bg-gray-800 font-medium md:mt-0 md:flex-row md:bg-transparent rtl:space-x-reverse'>
         {navlinks.map(({ name, url }) => (
           <li key={name}>
             <Link

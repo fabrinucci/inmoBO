@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ThemeSwitch } from '@/components/buttons';
 
 import { NavbarSmall, NavbarLarge } from './';
 
@@ -12,8 +13,11 @@ export const Navbar = () => {
             InmoBO
           </span>
         </Link>
-        <NavbarSmall />
-        <NavbarLarge />
+        <div className='flex items-center gap-3 md:gap-6'>
+          <NavbarSmall />
+          <NavbarLarge />
+          <ThemeSwitch />
+        </div>
       </div>
     </nav>
   );
