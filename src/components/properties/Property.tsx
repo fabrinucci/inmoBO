@@ -3,13 +3,11 @@ import type { PropertyData } from '@/types';
 import {
   BathIcon,
   BedIcon,
-  CheckIcon,
-  LeftArrow,
   LocationIcon,
   MaximizeIcon,
   PoolIcon,
-  XIcon,
-} from '@/components/icons';
+} from '@/components/icons/properties';
+import { CheckIcon, LeftArrow, XIcon } from '@/components/icons/general';
 
 export const Property = ({ property }: { property: PropertyData }) => {
   const {
