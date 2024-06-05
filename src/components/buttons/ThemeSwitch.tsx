@@ -24,7 +24,7 @@ export const ThemeSwitch = () => {
 
   if (resolvedTheme === 'dark') {
     return (
-      <button className='text-white' onClick={() => setTheme('light')}>
+      <button className='text-blue-100' onClick={() => setTheme('light')}>
         <SunIcon />
       </button>
     );
@@ -32,7 +32,7 @@ export const ThemeSwitch = () => {
 
   if (resolvedTheme === 'light') {
     return (
-      <button className='text-white' onClick={() => setTheme('dark')}>
+      <button className='text-sky-950' onClick={() => setTheme('dark')}>
         <MoonIcon />
       </button>
     );

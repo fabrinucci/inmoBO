@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='light' suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`bg-blue-100 dark:bg-sky-950 ${inter.className}`}>
         <Providers>
           <header>
             <Navbar />

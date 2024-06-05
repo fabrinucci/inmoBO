@@ -7,7 +7,9 @@ export async function Properties() {
   return (
     <section className='py-6'>
       <div className='mx-auto max-w-5xl'>
-        <h3 className='mb-4 text-3xl font-semibold'>Our best deals</h3>
+        <h3 className='mb-4 text-3xl font-semibold text-sky-950 dark:text-blue-100'>
+          Our best deals
+        </h3>
         <div className='grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
           {properties.slice(0, 6).map((property) => (
             <Property key={property.property_id} property={property} />
