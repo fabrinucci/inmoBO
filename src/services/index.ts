@@ -1,6 +1,6 @@
-import { AgentData } from '@/types/agents';
+import { AgentData, PropertyData } from '@/types';
+
 import { API_URL } from './config';
-import { PropertyData } from '@/types';
 
 export const getAgents = async (): Promise<AgentData[]> => {
   try {
