@@ -23,11 +23,15 @@ export default function RootLayout({
     <html lang='en' className='light' suppressHydrationWarning>
       <body className={`bg-blue-100 dark:bg-sky-950 ${inter.className}`}>
         <Providers>
-          <header>
-            <Navbar />
-          </header>
-          <main className='px-6'>{children}</main>
-          <Footer />
+          <div className='relative min-h-screen'>
+            <div className='pb-[320px]'>
+              <header>
+                <Navbar />
+              </header>
+              <main className='px-6'>{children}</main>
+            </div>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

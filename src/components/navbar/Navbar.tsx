@@ -5,7 +5,7 @@ import { NavbarSmall, NavbarLarge } from './';
 
 export const Navbar = () => {
   return (
-    <nav className='border-blue-900 bg-blue-300 dark:bg-sky-700'>
+    <nav className='h-[72px] border-blue-900 bg-blue-300 dark:bg-sky-700'>
       <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4'>
         <Link href='/' className='z-10 flex items-center space-x-3 rtl:space-x-reverse'>
           <img className='h-8' src='https://flowbite.com/docs/images/logo.svg' alt='InmoBO Logo' />

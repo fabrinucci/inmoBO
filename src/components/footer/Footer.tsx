@@ -6,9 +6,10 @@ import { usePathname } from 'next/navigation';
 import { FacebookIcon, InstagramIcon, WhatsappIcon } from '../icons/social';
 export const Footer = () => {
   const pathname = usePathname();
+
   return (
-    <footer className='bg-gray-800 px-6 py-10 text-white dark:bg-blue-300'>
-      <div className='flex flex-col items-center justify-center gap-6 md:flex-row md:items-start md:justify-around md:gap-10 lg:justify-evenly'>
+    <footer className='absolute bottom-0 h-[320px] w-full bg-gray-800 px-6 py-10 text-white dark:bg-blue-300'>
+      <div className='flex h-full flex-col items-center justify-center gap-6 md:flex-row md:items-start md:justify-around md:gap-10 lg:justify-evenly'>
         <div className='flex flex-col items-center gap-6'>
           <Link href='/' className='flex items-center space-x-3'>
             <img
