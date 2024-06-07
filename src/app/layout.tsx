@@ -10,8 +10,17 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'InmoBO',
+  title: {
+    template: '%s | InmoBO',
+    default: 'InmoBO',
+  },
   description: 'InmoBO is the best option for buy or renting a property',
+  openGraph: {
+    title: 'InmoBO',
+    description: 'InmoBO is the best option for buy or renting a property',
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
