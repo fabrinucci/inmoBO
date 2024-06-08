@@ -1,13 +1,8 @@
 import Link from 'next/link';
 import type { PropertyData } from '@/types';
-import {
-  BathIcon,
-  BedIcon,
-  LocationIcon,
-  MaximizeIcon,
-  PoolIcon,
-} from '@/components/icons/properties';
+import { BathIcon, BedIcon, MaximizeIcon, PoolIcon } from '@/components/icons/properties';
 import { CheckIcon, LeftArrow, XIcon } from '@/components/icons/general';
+import { LocationIcon } from '@/components/icons/contact';
 
 export const Property = ({ property }: { property: PropertyData }) => {
   const {

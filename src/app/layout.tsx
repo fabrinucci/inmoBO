@@ -37,7 +37,7 @@ export default function RootLayout({
               <header>
                 <Navbar />
               </header>
-              <main className='px-6'>{children}</main>
+              <main className='px-6 py-20'>{children}</main>
             </div>
             <Footer />
           </div>
