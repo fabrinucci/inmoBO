@@ -12,6 +12,10 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-img-light':
+          'linear-gradient(to right, #58c5f8bc, #87b6f9b5), url("/assets/hero.webp")',
+        'gradient-img-dark':
+          'linear-gradient(to right, #0ea4e9ae, #0b7eb3b0), url("/assets/hero.webp")',
       },
       gridTemplateColumns: {
         'fit-1': 'repeat(auto-fit, minmax(100px, 1fr))',
