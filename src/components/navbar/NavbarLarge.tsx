@@ -7,7 +7,7 @@ export const NavbarLarge = () => {
   const pathname = usePathname();
 
   return (
-    <div className='hidden w-full md:block md:w-auto'>
+    <div className='z-10 hidden w-full md:block md:w-auto'>
       <ul className='mt-4 flex flex-col gap-6 rounded-lg font-medium md:mt-0 md:flex-row md:bg-transparent rtl:space-x-reverse'>
         {navlinks.map(({ name, url }) => (
           <li key={name}>
