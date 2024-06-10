@@ -8,7 +8,7 @@ export async function Agents() {
     <section className='py-16'>
       <div className='mx-auto max-w-5xl'>
         <h3 className='mb-4 text-center text-3xl font-semibold text-sky-950 dark:text-blue-100'>
-          Our personal
+          Get in touch with our personal
         </h3>
         <ul className='grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
           {agents.map((agent) => (

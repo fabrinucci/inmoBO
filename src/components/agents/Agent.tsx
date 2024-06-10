@@ -6,7 +6,7 @@ const MSGEMAIL = 'I am on the real estate website and would like your advice.';
 export const Agent = ({ agent }: { agent: AgentData }) => {
   const { email, firstName, lastName, phone, photo, specializations } = agent;
   return (
-    <li className='mx-auto w-full max-w-sm rounded-lg border border-blue-500 bg-blue-300 p-4 shadow dark:border-blue-800 dark:bg-blue-900'>
+    <li className='mx-auto w-full max-w-sm rounded-lg bg-blue-300 p-4 shadow dark:bg-blue-900'>
       <div className='flex flex-col items-center'>
         <img className='mb-3 h-24 w-24 rounded-full shadow-lg' src={photo} alt='Bonnie image' />
         <h5 className='mb-2 font-semibold text-sky-950 dark:text-blue-100 lg:text-xl'>{`${firstName} ${lastName}`}</h5>
