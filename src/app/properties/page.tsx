@@ -24,19 +24,19 @@ export default async function PropertiesPage({ searchParams }: Props) {
       <div className='mb-10 flex items-center justify-center gap-4'>
         <Link
           href='/properties'
-          className='inline-flex items-center rounded-lg bg-blue-600 px-3 py-1.5 text-center font-semibold uppercase text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800 md:px-6 md:py-3'
+          className='rounded-lg bg-blue-600 px-3 py-1.5 text-center text-sm font-semibold uppercase text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800 md:px-6 md:py-3 md:text-base'
         >
           All Properties
         </Link>
         <Link
           href='/properties?operation=sale'
-          className='inline-flex items-center rounded-lg bg-blue-600 px-3 py-1.5 text-center font-semibold uppercase text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800 md:px-6 md:py-3'
+          className='rounded-lg bg-blue-600 px-3 py-1.5 text-center text-sm font-semibold uppercase text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800 md:px-6 md:py-3 md:text-base'
         >
           For Sale
         </Link>
         <Link
           href='/properties?operation=rent'
-          className='inline-flex items-center rounded-lg bg-blue-600 px-3 py-1.5 text-center font-semibold uppercase text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800 md:px-6 md:py-3'
+          className='rounded-lg bg-blue-600 px-3 py-1.5 text-center text-sm font-semibold uppercase text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800 md:px-6 md:py-3 md:text-base'
         >
           For Rent
         </Link>
