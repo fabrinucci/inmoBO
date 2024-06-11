@@ -4,7 +4,7 @@ import { EmailIcon, LocationIcon, PhoneIcon } from '@/components/icons/contact';
 export default function ContactPage() {
   return (
     <>
-      <h2 className='mb-6 text-center text-3xl font-semibold text-sky-950 dark:text-blue-200'>
+      <h2 className='mb-6 text-center text-3xl font-semibold text-sky-950 dark:text-blue-100'>
         How can you get in touch with us?
       </h2>
       <div className='flex flex-col items-center gap-16 md:flex-row md:justify-center md:gap-28'>

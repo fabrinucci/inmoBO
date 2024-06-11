@@ -17,7 +17,7 @@ export default async function PropertiesPage({ searchParams }: Props) {
   const rentProperties = properties.filter((p) => p.operation_type.toLowerCase() === 'rent');
   return (
     <div className='mx-auto max-w-5xl'>
-      <h1 className='mb-6 text-center text-3xl font-semibold text-sky-950 dark:text-blue-200'>
+      <h1 className='mb-6 text-center text-3xl font-semibold text-sky-950 dark:text-blue-100'>
         Take a look at our {operation} properties
       </h1>
 
