@@ -2,7 +2,7 @@ import { Agents } from '@/components/agents';
 import { Hero } from '@/components/hero';
 import { Properties } from '@/components/properties';
 
-export default function HomePage() {
+export default async function Home() {
   return (
     <>
       <Hero />

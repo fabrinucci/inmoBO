@@ -46,7 +46,7 @@ const reasons = [
   },
 ];
 
-export const Reasons = () => {
+export async function Reasons() {
   return (
     <section className='py-16'>
       <div className='mx-auto max-w-5xl'>
@@ -70,4 +70,4 @@ export const Reasons = () => {
       </div>
     </section>
   );
-};
+}
