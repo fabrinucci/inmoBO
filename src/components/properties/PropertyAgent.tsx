@@ -1,15 +1,18 @@
 import Link from 'next/link';
-import type { AgentData } from '@/types';
+import { getAgent } from '@/services';
+import { Form } from '@/components/form';
 
 const MSGEMAIL = 'I am on the real estate website and would like your advice.';
 
-export const Agent = ({ agent }: { agent: AgentData }) => {
-  const { email, firstName, lastName, phone, photo, specializations } = agent;
+export default async function PropertyAgent({ agent_id }: { agent_id: number }) {
+  const agent = await getAgent({ agentId: agent_id });
+  const { email, firstName, lastName, phone, photo, specializations } = agent!;
+
   return (
-    <li className='mx-auto w-full max-w-sm rounded-lg bg-blue-300 p-4 shadow dark:bg-blue-900'>
+    <div className='mx-auto w-full max-w-sm rounded-lg'>
       <div className='flex flex-col items-center'>
         <img
-          className='mb-3 h-24 w-24 rounded-full bg-sky-800 shadow-lg dark:bg-blue-200'
+          className='mb-3 h-20 w-20 rounded-full bg-blue-200 shadow-lg dark:bg-sky-800'
           src={photo}
           alt='Bonnie image'
         />
@@ -37,7 +40,9 @@ export const Agent = ({ agent }: { agent: AgentData }) => {
             Send message
           </Link>
         </div>
+
+        <Form />
       </div>
-    </li>
+    </div>
   );
-};
+}

@@ -49,13 +49,13 @@ export const Property = ({ property }: { property: PropertyData }) => {
         </div>
 
         <div className='my-6 flex flex-wrap gap-4'>
-          <div className='flex items-center  gap-2'>
+          <div className='flex items-center gap-2'>
             <span className='text-blue-900 dark:text-blue-300'>
               <BedIcon />
             </span>
             <p className='text-sm text-sky-950 dark:text-blue-100 lg:text-base'>{bedrooms}</p>
           </div>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-2'>
             <span className='text-blue-900 dark:text-blue-300'>
               <BathIcon />
             </span>
@@ -71,7 +71,7 @@ export const Property = ({ property }: { property: PropertyData }) => {
               {pool ? <CheckIcon /> : <XIcon />}
             </p>
           </div>
-          <div className='flex items-center  gap-2'>
+          <div className='flex items-center gap-2'>
             <span className='text-blue-900 dark:text-blue-300'>
               <MaximizeIcon />
             </span>
@@ -80,7 +80,7 @@ export const Property = ({ property }: { property: PropertyData }) => {
         </div>
         <Link
           href={`/property/${slug}`}
-          className='inline-flex items-center rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-medium  text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800'
+          className='inline-flex items-center rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-medium text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800'
         >
           View details
           <LeftArrow />

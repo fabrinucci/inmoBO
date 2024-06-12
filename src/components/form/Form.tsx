@@ -4,7 +4,7 @@ export const Form = () => {
   return (
     <form className='px-8 py-10' onSubmit={(e) => e.preventDefault()}>
       <div className='mb-6'>
-        <h3 className='text-lg font-semibold text-sky-950 dark:text-blue-100'>Send us a message</h3>
+        <h3 className='text-lg font-semibold text-sky-950 dark:text-blue-100'>Send a message</h3>
       </div>
       <div className='relative z-0 mb-5 w-full'>
         <input

@@ -10,7 +10,7 @@ export interface PropertyData {
   property_type:    string;
   address:          string;
   price:            number;
-  total_sq_m:      number;
+  total_sq_m:       number;
   bedrooms:         number;
   bathrooms:        number;
   garage:           boolean;
@@ -19,5 +19,5 @@ export interface PropertyData {
   photos:           string[];
   status:           string;
   publication_date: string;
-  agent_id?:        number;
+  agent_id:         number;
 }

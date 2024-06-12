@@ -13,7 +13,7 @@ export const NavbarSmall = () => {
     <div>
       <button
         onClick={() => setDisplayNav(!displayNav)}
-        className={`${displayNav ? 'fixed' : ''} right-5 top-3 z-20 h-10 w-10 rounded-lg p-2 text-sky-950 dark:text-blue-100 md:hidden`}
+        className={`${displayNav ? 'fixed' : ''} right-5 top-3 z-50 h-10 w-10 rounded-lg p-2 text-sky-950 dark:text-blue-100 md:hidden`}
         aria-controls='navbar-solid-bg'
         aria-expanded='false'
       >
