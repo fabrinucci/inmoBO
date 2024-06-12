@@ -9,7 +9,7 @@ interface Props {
   };
 }
 
-export default async function Page({ params }: Props) {
+export default async function PropertyPage({ params }: Props) {
   const property = await getProperty({ slug: params.slug });
   if (!property) redirect('/');
   const { address, name, operation_type, property_type, price } = property;
