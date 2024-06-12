@@ -1,4 +1,4 @@
-import { AboutDescription } from '@/components/about';
+import { AboutDescription, Reasons } from '@/components/about';
 import { Agents } from '@/components/agents';
 
 export default function AboutPage() {
@@ -9,6 +9,7 @@ export default function AboutPage() {
       </h1>
 
       <AboutDescription />
+      <Reasons />
       <Agents />
     </>
   );
