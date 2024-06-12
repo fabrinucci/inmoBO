@@ -1,9 +1,9 @@
-import { Reasons } from '@/components/about/Reasons';
-import { Agents } from '@/components/agents';
 import { Hero } from '@/components/hero';
 import { Properties } from '@/components/properties';
+import { Agents } from '@/components/agents';
+import { Reasons } from '@/components/about';
 
-export default async function Home() {
+export default function Home() {
   return (
     <>
       <Hero />

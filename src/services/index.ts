@@ -1,11 +1,10 @@
-import { AgentData, Agents, Properties, PropertyData } from '@/types';
-
-import { API_URL } from './config';
+import { AgentData, PropertyData } from '@/types';
+import propertiesData from '@/api/properties.json';
+import agentsData from '@/api/agents.json';
 
 export const getAgents = async (): Promise<AgentData[]> => {
   try {
-    const res = await fetch(`${API_URL}/agents.json`);
-    const { data } = await res.json();
+    const data: AgentData[] = agentsData.data;
     return data;
   } catch (error) {
     console.log(error);
@@ -15,8 +14,7 @@ export const getAgents = async (): Promise<AgentData[]> => {
 
 export const getProperties = async (): Promise<PropertyData[]> => {
   try {
-    const res = await fetch(`${API_URL}/properties.json`);
-    const { data } = await res.json();
+    const data: PropertyData[] = propertiesData.data;
     return data;
   } catch (error) {
     console.log(error);
@@ -26,9 +24,7 @@ export const getProperties = async (): Promise<PropertyData[]> => {
 
 export const getProperty = async ({ slug }: { slug: string }): Promise<PropertyData | null> => {
   try {
-    const res = await fetch(`${API_URL}/properties.json`);
-    const response: Properties = await res.json();
-    const { data } = response;
+    const data: PropertyData[] = propertiesData.data;
     const property = data.find((property) => property.slug === slug);
     if (!property) return null;
     return property;
@@ -40,9 +36,7 @@ export const getProperty = async ({ slug }: { slug: string }): Promise<PropertyD
 
 export const getAgent = async ({ agentId }: { agentId: number }): Promise<AgentData | null> => {
   try {
-    const res = await fetch(`${API_URL}/agents.json`);
-    const response: Agents = await res.json();
-    const { data } = response;
+    const data: AgentData[] = agentsData.data;
     const agent = data.find((agent) => agent.agent_id === agentId);
     if (!agent) return null;
     return agent;

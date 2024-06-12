@@ -9,8 +9,6 @@ export interface AgentData {
   email:           string;
   phone:           string;
   photo:           string;
-  specializations: Specializations[];
+  specializations: string[];
   slug:            string;
 }
-
-type Specializations = 'Apartments' | 'Commercial' | 'Land' | 'Residential'
