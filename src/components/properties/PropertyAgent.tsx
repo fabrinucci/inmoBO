@@ -14,7 +14,7 @@ export default async function PropertyAgent({ agent_id }: { agent_id: number }) 
         <img
           className='mb-3 h-20 w-20 rounded-full bg-blue-200 shadow-lg dark:bg-sky-800'
           src={photo}
-          alt='Bonnie image'
+          alt={`${firstName} ${lastName} profile photo`}
         />
         <h5 className='mb-2 font-semibold text-sky-950 dark:text-blue-100 lg:text-xl'>{`${firstName} ${lastName}`}</h5>
         <ul className='flex flex-wrap gap-3'>

@@ -21,7 +21,11 @@ export const Property = ({ property }: { property: PropertyData }) => {
 
   return (
     <article className='w-auto rounded-lg bg-blue-300 shadow dark:bg-blue-900'>
-      <img className='h-60 w-full rounded-t-lg object-cover' src={photos[0]} alt={name} />
+      <img
+        className='h-60 w-full rounded-t-lg object-cover'
+        src={photos[0]}
+        alt={`${property_type} ${name} photo`}
+      />
       <div className='p-5'>
         <Link href={`/property/${slug}`}>
           <h4 className='mb-2 text-xl tracking-tight text-sky-950 dark:text-blue-100 lg:text-2xl'>
