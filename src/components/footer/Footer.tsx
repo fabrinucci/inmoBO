@@ -12,11 +12,7 @@ export const Footer = () => {
       <div className='flex h-full flex-col items-center justify-center gap-6 md:flex-row md:items-start md:justify-around md:gap-10 lg:justify-evenly'>
         <div className='flex flex-col items-center gap-6'>
           <Link href='/' className='flex items-center space-x-3'>
-            <img
-              className='h-8'
-              src='https://flowbite.com/docs/images/logo.svg'
-              alt='InmoBO Logo'
-            />
+            <img className='h-12' src='/assets/logo.png' alt='InmoBO Logo' />
             <span className='text-xl font-semibold text-blue-100 dark:text-sky-950'>InmoBO</span>
           </Link>
           <p className='max-w-md text-wrap text-center text-blue-100 dark:text-sky-950'>
