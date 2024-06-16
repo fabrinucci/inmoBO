@@ -1,4 +1,4 @@
-![InmoBO](https://github.com/fabrinucci/inmobo-client/blob/main/public/home.webp)
+![InmoBO](https://github.com/fabrinucci/inmobo-client/blob/main/public/assets/main.webp)
 
 <h1 align="center">InmoBO</h1>
 <p>
