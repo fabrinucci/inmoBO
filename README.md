@@ -27,14 +27,22 @@
 ## Install
 
 ```sh
-yarn
+npm i
 ```
 
 ## Usage
 
 ```sh
-yarn dev
+npm run dev
 ```
+
+## Testing
+
+```sh
+npm run test
+```
+
+- The unit test files must have the name `*spec.js`
 
 ## Technologies
 
