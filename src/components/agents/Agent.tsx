@@ -12,11 +12,19 @@ export const Agent = ({ agent }: { agent: AgentData }) => {
           className='mb-3 h-24 w-24 rounded-full bg-sky-800 shadow-lg dark:bg-blue-200'
           src={photo}
           alt={`${firstName} ${lastName} profile photo`}
+          data-testid='agent-img'
         />
-        <h5 className='mb-2 font-semibold text-sky-950 dark:text-blue-100 lg:text-xl'>{`${firstName} ${lastName}`}</h5>
+        <h5
+          className='mb-2 font-semibold text-sky-950 dark:text-blue-100 lg:text-xl'
+          data-testid='agent-name'
+        >{`${firstName} ${lastName}`}</h5>
         <ul className='flex flex-wrap gap-3'>
           {specializations.map((spc, index) => (
-            <span key={index} className='text-xs text-sky-900 dark:text-blue-200 lg:text-sm'>
+            <span
+              key={index}
+              className='text-xs text-sky-900 dark:text-blue-200 lg:text-sm'
+              data-testid='agent-special'
+            >
               {spc}
             </span>
           ))}
@@ -25,6 +33,7 @@ export const Agent = ({ agent }: { agent: AgentData }) => {
           <Link
             href={`mailto:${email}`}
             className='rounded-lg bg-blue-600 px-4 py-2 text-center text-xs font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800 lg:text-sm'
+            data-testid='agent-email'
           >
             Send email
           </Link>
@@ -33,6 +42,7 @@ export const Agent = ({ agent }: { agent: AgentData }) => {
             target='_blank'
             rel='noopener'
             className='rounded-lg border border-blue-700 bg-transparent px-4 py-2 text-center text-xs font-medium text-blue-700 hover:bg-blue-700 hover:text-white focus:z-10 focus:outline-none focus:ring-4 focus:ring-blue-700 dark:text-blue-200 lg:text-sm'
+            data-testid='agent-message'
           >
             Send message
           </Link>
