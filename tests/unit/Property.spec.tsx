@@ -1,27 +1,6 @@
 import { Property } from '@/components/properties';
+import { mockProperty } from '@/mocks';
 import { render, screen } from '@testing-library/react';
-
-const TEST_IMAGE = 'https://xsgames.co/randomusers/assets/avatars/male/7.jpg';
-
-const mockProperty = {
-  property_id: 1,
-  name: 'Property Test',
-  slug: 'property-test',
-  operation_type: 'Rent',
-  property_type: 'Apartment',
-  address: '123',
-  price: 1000,
-  total_sq_m: 100,
-  bedrooms: 4,
-  bathrooms: 1,
-  garage: true,
-  pool: false,
-  description: 'Beautiful property test',
-  photos: [TEST_IMAGE, '5465465', '465r65'],
-  status: 'active',
-  publication_date: '2024-02-02',
-  agent_id: 2,
-};
 
 const setup = () => render(<Property property={mockProperty} />);
 

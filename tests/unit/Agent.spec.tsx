@@ -1,19 +1,8 @@
-import { Agent } from '@/components/agents';
 import { render, screen } from '@testing-library/react';
+import { Agent } from '@/components/agents';
+import { mockAgent } from '@/mocks';
 
 const MSGEMAIL = 'I am on the real estate website and would like your advice.';
-const TEST_IMAGE = 'https://xsgames.co/randomusers/assets/avatars/male/7.jpg';
-
-const mockAgent = {
-  agent_id: 10,
-  firstName: 'Marcel',
-  lastName: 'Pereira',
-  email: 'marcelper@mail.com',
-  phone: '123456789',
-  photo: TEST_IMAGE,
-  specializations: ['Apartments', 'Land'],
-  slug: 'marcel-pereira',
-};
 
 const setup = () => render(<Agent agent={mockAgent} />);
 
@@ -29,7 +18,7 @@ describe('Test <Hero /> component', () => {
     });
 
     expect(agentName).toHaveTextContent(mockAgent.firstName + ' ' + mockAgent.lastName);
-    expect(specials).toContain('Land');
+    expect(specials).toContain(mockAgent.specializations[0]);
   });
 
   it('Should link to email and whatsapp', () => {
