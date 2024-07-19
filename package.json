@@ -11,7 +11,8 @@
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check .",
     "test": "jest",
-    "test:watch": "npm run test -- --watchAll"
+    "test:watch": "npm run test -- --watchAll",
+    "test:e2e": "npx playwright test"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.45.2",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
