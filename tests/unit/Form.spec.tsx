@@ -12,7 +12,7 @@ describe('Test <Footer /> component', () => {
     const labelFullname = screen.getByText(/fullname/i);
     const labelPhone = screen.getByText(/phone number/i);
     const labelMessage = screen.getByText(/your message/i);
-    const submitButton = screen.getByRole('button', { name: /submit/i });
+    const submitButton = screen.getByTestId('submit-button');
 
     expect(formTitle).toBeInTheDocument();
 
@@ -27,6 +27,7 @@ describe('Test <Footer /> component', () => {
     expect(getMessage()).toBeInTheDocument();
 
     expect(submitButton).toBeInTheDocument();
+    expect(submitButton).toHaveTextContent(/Submit/);
   });
 
   it('Should get correct values', async () => {

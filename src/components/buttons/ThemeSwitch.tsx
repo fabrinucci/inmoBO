@@ -25,7 +25,7 @@ export const ThemeSwitch = () => {
     <button
       className={resolvedTheme !== 'dark' ? 'text-sky-950' : 'text-blue-100'}
       onClick={() => setTheme(resolvedTheme !== 'dark' ? 'dark' : 'light')}
-      data-testid={resolvedTheme !== 'dark' ? 'switch-dark' : 'switch-light'}
+      data-testid='switch-theme'
       aria-label={resolvedTheme !== 'dark' ? 'Switch to dark mode' : 'Switch to light mode'}
     >
       {resolvedTheme !== 'dark' ? <MoonIcon /> : <SunIcon />}

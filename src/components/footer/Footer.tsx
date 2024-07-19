@@ -15,7 +15,10 @@ export const Footer = () => {
             <img className='h-12' src='/assets/logo.png' alt='InmoBO Logo' />
             <span className='text-xl font-semibold text-blue-100 dark:text-sky-950'>InmoBO</span>
           </Link>
-          <p className='max-w-md text-wrap text-center text-blue-100 dark:text-sky-950'>
+          <p
+            className='max-w-md text-wrap text-center text-blue-100 dark:text-sky-950'
+            data-testid='footer-p'
+          >
             Navigate the real estate landscape with confidence alongside our team of experts. We
             provide personalized solutions for buying, selling, investing, and managing properties,
             ensuring you achieve your real estate goals.
