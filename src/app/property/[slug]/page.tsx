@@ -19,7 +19,10 @@ export default async function Page({ params }: Props) {
       <div className='mx-auto max-w-5xl'>
         <div className='mb-6 flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0'>
           <div className='text-sky-950 dark:text-blue-100'>
-            <h2 className='mb-2 text-center text-2xl font-semibold md:text-left'>
+            <h2
+              className='mb-2 text-center text-2xl font-semibold md:text-left'
+              data-testid='property-name'
+            >
               {property_type} - {name}
             </h2>
             <p className=''>{address}</p>

@@ -1,4 +1,4 @@
 export * from './BarsIcon';
-export * from './DownArrow';
+export * from './DownArrowIcon';
 export * from './MoonIcon';
 export * from './SunIcon';

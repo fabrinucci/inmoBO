@@ -7,7 +7,11 @@ export const Navbar = () => {
   return (
     <nav className='z-10 h-[72px] border-blue-900 bg-blue-300 dark:bg-sky-700'>
       <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4'>
-        <Link href='/' className='z-10 flex items-center space-x-3 rtl:space-x-reverse'>
+        <Link
+          href='/'
+          className='z-10 flex items-center space-x-3 rtl:space-x-reverse'
+          data-testid='logo-link'
+        >
           <img className='h-12' src='/assets/logo.png' alt='InmoBO Logo' />
           <span className='self-center whitespace-nowrap text-2xl font-semibold text-sky-950 dark:text-blue-100'>
             InmoBO

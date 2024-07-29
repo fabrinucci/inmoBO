@@ -5,13 +5,13 @@ import { Reasons } from '@/components/about';
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <div className='pt-[650px]'>
         <Properties />
         <Agents />
         <Reasons />
       </div>
-    </>
+    </div>
   );
 }

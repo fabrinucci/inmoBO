@@ -4,16 +4,23 @@ export const Hero = () => {
   return (
     <div className='absolute left-0 top-0 z-0 h-[800px] w-full bg-gradient-img-light bg-cover bg-fixed pt-[72px] dark:bg-gradient-img-dark'>
       <div className='relative z-10 flex flex-col items-center gap-8 px-10 py-32'>
-        <h1 className='mt-10 text-center text-4xl font-semibold text-sky-950 dark:text-blue-100 md:text-5xl'>
+        <h1
+          className='mt-10 text-center text-4xl font-semibold text-sky-950 dark:text-blue-100 md:text-5xl'
+          data-testid='hero-heading'
+        >
           Find Your Dream Home
         </h1>
-        <p className='max-w-lg text-center text-lg font-semibold leading-7 text-sky-950 dark:text-blue-100'>
+        <p
+          className='max-w-lg text-center text-lg font-semibold leading-7 text-sky-950 dark:text-blue-100'
+          data-testid='hero-p'
+        >
           Are you looking for a place where you can wake up every day with a smile on your face and
           enjoy life? Find your dream home in our catalog!
         </p>
         <Link
           className='rounded-lg border-4 border-blue-200 bg-blue-600 px-6 py-3 text-center  text-sm font-medium uppercase text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800'
           href='/properties'
+          data-testid='properties-link'
         >
           View Properties
         </Link>

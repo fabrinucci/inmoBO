@@ -1,9 +1,11 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended",
+    "prettier",
     "plugin:prettier/recommended",
-    "prettier"
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/react",
+    "plugin:@typescript-eslint/recommended"
   ],
   "plugins": [ "@typescript-eslint", "eslint-plugin-import-helpers" ],
   "parser": "@typescript-eslint/parser",
@@ -13,6 +15,8 @@
   },
   "rules": {
     "import-helpers/order-imports": [ "warn", { "newlinesBetween": "always" } ],
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "testing-library/prefer-screen-queries": "off"
   }
 }

@@ -4,7 +4,10 @@ import { NotFoundIcon } from '@/components/icons/NotFoundIcon';
 export default function NotFoundPage() {
   return (
     <div className='flex w-full flex-col items-center py-6'>
-      <h2 className='text-3xl font-semibold text-sky-950 dark:text-blue-100'>
+      <h2
+        className='text-3xl font-semibold text-sky-950 dark:text-blue-100'
+        data-testid='not-found-title'
+      >
         Ups! Page not found.
       </h2>
       <span className='py-10'>

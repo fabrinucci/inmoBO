@@ -25,14 +25,21 @@ export const Property = ({ property }: { property: PropertyData }) => {
         className='h-60 w-full rounded-t-lg object-cover'
         src={photos[0]}
         alt={`${property_type} ${name} photo`}
+        data-testid='property-image'
       />
       <div className='p-5'>
         <Link href={`/property/${slug}`}>
-          <h4 className='mb-2 text-xl tracking-tight text-sky-950 dark:text-blue-100 lg:text-2xl'>
+          <h4
+            className='mb-2 text-xl tracking-tight text-sky-950 dark:text-blue-100 lg:text-2xl'
+            data-testid='property-title'
+          >
             {property_type} - {name}
           </h4>
         </Link>
-        <p className='mb-3 text-lg font-bold text-sky-950 dark:text-blue-100 lg:text-2xl'>
+        <p
+          className='mb-3 text-lg font-bold text-sky-950 dark:text-blue-100 lg:text-2xl'
+          data-testid='property-price'
+        >
           ${price}
         </p>
 
@@ -40,6 +47,7 @@ export const Property = ({ property }: { property: PropertyData }) => {
           <Link
             href={`/properties?operation=${operation_type.toLowerCase()}`}
             className='inline-flex items-center rounded-lg bg-blue-600 px-2 py-1 text-center text-xs font-medium uppercase text-blue-100 hover:bg-blue-700 focus:outline-none  focus:ring-4 focus:ring-blue-800 lg:px-3 lg:py-2 lg:text-sm'
+            data-testid='property-op-type'
           >
             {operation_type}
           </Link>
@@ -47,7 +55,10 @@ export const Property = ({ property }: { property: PropertyData }) => {
 
         <div className='flex gap-1 text-blue-900 dark:text-blue-300'>
           <LocationIcon />
-          <p className='text-xs leading-4 text-sky-950 dark:text-blue-100 lg:text-sm lg:leading-5'>
+          <p
+            className='text-xs leading-4 text-sky-950 dark:text-blue-100 lg:text-sm lg:leading-5'
+            data-testid='property-address'
+          >
             {address}
           </p>
         </div>
@@ -85,6 +96,7 @@ export const Property = ({ property }: { property: PropertyData }) => {
         <Link
           href={`/property/${slug}`}
           className='inline-flex items-center rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-medium text-blue-100 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-800'
+          data-testid='property-details-link'
         >
           View details
           <LeftArrow />
