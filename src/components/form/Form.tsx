@@ -2,7 +2,11 @@
 
 export const Form = () => {
   return (
-    <form className='px-8 py-10' onSubmit={(e) => e.preventDefault()}>
+    <form
+      className='px-8 py-10'
+      onSubmit={(e) => e.preventDefault()}
+      data-testid='contact-info-form'
+    >
       <div className='mb-6'>
         <h3 className='text-lg font-semibold text-sky-950 dark:text-blue-100'>Send a message</h3>
       </div>

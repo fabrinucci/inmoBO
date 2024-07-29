@@ -11,7 +11,10 @@ export default function ContactPage() {
         How can you get in touch with us?
       </h2>
       <div className='flex flex-col items-center gap-16 md:flex-row md:justify-center md:gap-28'>
-        <div className='rounded-md bg-blue-300 px-10 py-14 dark:bg-blue-900 md:px-20 md:py-28'>
+        <div
+          className='rounded-md bg-blue-300 px-10 py-14 dark:bg-blue-900 md:px-20 md:py-28'
+          data-testid='contact-info-card'
+        >
           <h3 className='mb-10 text-lg font-semibold text-sky-950 dark:text-blue-100'>
             Contact us
           </h3>

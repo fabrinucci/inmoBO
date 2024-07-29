@@ -1,8 +1,12 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Test Footer', () => {
-  test('Should be visible', async ({ page }) => {
+  test.beforeEach(async ({ page }) => {
     await page.goto('/');
+  });
+
+  test('Should be visible', async ({ page }) => {
+    await expect(page.locator('footer')).toBeVisible();
     await expect(page.getByTestId('footer-home-link')).toBeVisible();
     await expect(page.getByTestId('footer-p')).toBeVisible();
 
@@ -27,8 +31,6 @@ test.describe('Test Footer', () => {
   });
 
   test('Should navigate correctly', async ({ page }) => {
-    await page.goto('/');
-
     const homeTitle = page.getByTestId('hero-heading');
     await expect(homeTitle).toBeVisible();
 

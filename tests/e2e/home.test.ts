@@ -1,9 +1,11 @@
 import test, { expect } from '@playwright/test';
 
 test.describe('Test Home', () => {
-  test('Should be visible', async ({ page }) => {
+  test.beforeEach(async ({ page }) => {
     await page.goto('/');
+  });
 
+  test('Should be visible', async ({ page }) => {
     await expect(page).toHaveTitle(/InmoBO/);
 
     const homeTitle = page.getByTestId('hero-heading');
@@ -22,5 +24,8 @@ test.describe('Test Home', () => {
     await expect(
       page.getByRole('heading', { name: 'Get in touch with our personal' }),
     ).toBeVisible();
+    await expect(page.getByTestId('agents-card')).toBeVisible();
+
+    await expect(page.getByRole('heading', { name: 'Why choose us?' })).toBeVisible();
   });
 });

@@ -30,7 +30,7 @@ export default async function PropertiesPage({ searchParams }: Props) {
         className='mb-6 text-center text-3xl font-semibold text-sky-950 dark:text-blue-100'
         data-testid='properties-title'
       >
-        Take a look at our {operationValue} properties
+        Take a look at our {operationValue ? `${operationValue} properties` : 'properties'}
       </h1>
 
       <div className='mb-10 flex items-center justify-center gap-4'>
@@ -45,7 +45,7 @@ export default async function PropertiesPage({ searchParams }: Props) {
         </Link>
       </div>
 
-      <div className='grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
+      <div className='grid gap-6 sm:grid-cols-2 md:grid-cols-3' data-testid='properties-card'>
         {filteredProperties.map((p) => (
           <Property key={p.property_id} property={p} />
         ))}
