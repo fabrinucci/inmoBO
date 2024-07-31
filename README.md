@@ -2,7 +2,7 @@
 
 <h1 align="center">InmoBO</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/fabrinucci/inmobo-client#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -38,11 +38,16 @@ npm run dev
 
 ## Testing
 
+### Unit testing
 ```sh
 npm run test
 ```
+- The unit test files must have the name `*spec.ts` / `*spec.tsx`
 
-- The unit test files must have the name `*spec.js`
+### E2E Testing
+```sh
+npx playwright test
+```
 
 ## Technologies
 
@@ -51,6 +56,10 @@ npm run test
 [![TypeScript](https://img.shields.io/static/v1?label=&message=typescript&color=3178C6&logo=typescript&logoColor=white&style=for-the-badge)](https://www.typescriptlang.org/)
 
 [![TailwindCSS](https://img.shields.io/static/v1?label=&message=TailwindCSS&color=06B6D4&logo=tailwindcss&logoColor=white&style=for-the-badge)](https://tailwindcss.com/)
+
+[![Jest](https://img.shields.io/static/v1?label=&message=jest&color=C21325&logo=jest&logoColor=white&style=for-the-badge)](https://jestjs.io/)
+[![React Testing Library](https://img.shields.io/static/v1?label=&message=testing-library&color=E33332&logo=testing-library&logoColor=white&style=for-the-badge)](https://testing-library.com/)
+[![Playwright](https://img.shields.io/static/v1?label=&message=playwright&color=2EAD33&logo=playwright&logoColor=white&style=for-the-badge)](https://playwright.dev/)
 
 
 ## Author
