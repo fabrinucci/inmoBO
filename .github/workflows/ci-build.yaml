@@ -33,9 +33,6 @@ jobs:
     - name: Run tests
       run: npm run test
 
-    - name: Start Next.js server
-      run: npm start
-
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
 
