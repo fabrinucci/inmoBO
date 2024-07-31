@@ -33,6 +33,15 @@ jobs:
     - name: Run tests
       run: npm run test
 
+    - name: Build application
+      run: npm run build
+
+    - name: Start Next.js server
+      run: npm start
+
+    - name: Wait for Next.js to be ready
+      run: npx wait-on http://localhost:3000
+
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
 
