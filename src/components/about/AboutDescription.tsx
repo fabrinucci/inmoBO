@@ -34,9 +34,9 @@ export const AboutDescription = () => {
             </p>
           </div>
         </div>
-        <div className=''>
+        <div className='w-full rounded-md bg-sky-800 dark:bg-blue-200 md:h-[400px] '>
           <img
-            className='w-full rounded-md object-cover object-center md:h-[400px] md:w-full'
+            className='w-full rounded-md object-cover object-center md:h-[400px]'
             src='/assets/about.webp'
             alt=''
           />

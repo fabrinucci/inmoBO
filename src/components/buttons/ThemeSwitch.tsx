@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-
-import { MoonIcon, SunIcon } from '../icons/navbar';
+import { MoonIcon, SunIcon } from '@/components/icons/navbar';
 
 export const ThemeSwitch = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -22,19 +21,14 @@ export const ThemeSwitch = () => {
     );
   }
 
-  if (resolvedTheme === 'dark') {
-    return (
-      <button className='text-blue-100' onClick={() => setTheme('light')}>
-        <SunIcon />
-      </button>
-    );
-  }
-
-  if (resolvedTheme === 'light') {
-    return (
-      <button className='text-sky-950' onClick={() => setTheme('dark')}>
-        <MoonIcon />
-      </button>
-    );
-  }
+  return (
+    <button
+      className={resolvedTheme !== 'dark' ? 'text-sky-950' : 'text-blue-100'}
+      onClick={() => setTheme(resolvedTheme !== 'dark' ? 'dark' : 'light')}
+      data-testid='switch-theme'
+      aria-label={resolvedTheme !== 'dark' ? 'Switch to dark mode' : 'Switch to light mode'}
+    >
+      {resolvedTheme !== 'dark' ? <MoonIcon /> : <SunIcon />}
+    </button>
+  );
 };
